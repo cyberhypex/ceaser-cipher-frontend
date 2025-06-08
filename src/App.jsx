@@ -3,13 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './output.css'
 import { LandingPage } from './components/LandingPage'
+import  NavBar  from './components/NavBar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <LandingPage />
+    <NavBar />
+  
     </>
   )
 }

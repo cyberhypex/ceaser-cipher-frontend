@@ -37,7 +37,7 @@ export function LandingPage() {
         
         <div className=" flex-col items-center mt-4">
           <button
-            onClick={() => handleNavigation('/encrypt')}
+            onClick={() => handleNavigation('/decrypt')}
             className="bg-white text-amber-300 font-bold px-8 py-3 rounded-lg hover:bg-amber-300 hover:text-blue-600 transition shadow-md"
           >
             Decrypt your encrypted message

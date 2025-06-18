@@ -287,6 +287,10 @@
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
+  .text-8xl {
+    font-size: var(--text-8xl) /* 6rem = 96px */;
+    line-height: var(--tw-leading, var(--text-8xl--line-height) /* 1 */);
+}
   .text-red-500 {
     color: var(--color-red-500) /* oklch(63.7% 0.237 25.331) = #fb2c36 */;
 }

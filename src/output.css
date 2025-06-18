@@ -283,6 +283,10 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-6xl {
+    font-size: var(--text-6xl) /* 3.75rem = 60px */;
+    line-height: var(--tw-leading, var(--text-6xl--line-height) /* 1 */);
+}
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);

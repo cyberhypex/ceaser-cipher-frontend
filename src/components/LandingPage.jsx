@@ -13,7 +13,7 @@ export function LandingPage() {
       <div className=" flex-col items-center mb-10">
         <div className="flex items-center mb-6">
           <PiDetectiveFill className="text-9xl mr-4 text-amber-300 drop-shadow-md" />
-          <h1 className="text-4xl font-bold text-white drop-shadow-lg">
+          <h1 className="text-6xl font-bold text-white drop-shadow-lg">
             Welcome to <span className="text-amber-300">Cipher</span>
           </h1>
         </div>

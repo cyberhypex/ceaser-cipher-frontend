@@ -42,13 +42,13 @@ const EncryptText = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-200 to-indigo-100 flex justify-center items-center p-6">
+    <div className="min-h-screen bg-gray-600 flex justify-center items-center p-6">
       <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-lg border border-blue-200 transition-all duration-300">
         
         {/* Header */}
-        <div className="flex items-center gap-3 mb-8">
-          <PiLockKeyBold className="text-4xl text-indigo-700" />
-          <h2 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 to-purple-600">
+        <div className="flex items-center gap-3 mb-10">
+          
+         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600">
             Caesar Cipher Encryptor
           </h2>
         </div>

@@ -44,6 +44,10 @@ export function LandingPage() {
           </button>
           
         </div>
+        <div className='flex items-center text-amber-300 mt-2.5'>
+          Built by Anshuman
+          
+        </div>
 
       </div>
     </div>

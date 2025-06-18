@@ -47,7 +47,7 @@ const DecryptText = () => {
         
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">
-          <PiLockLaminatedOpenBold className="text-4xl text-purple-700" />
+          
           <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600">
             Caesar Cipher Decryptor
           </h2>

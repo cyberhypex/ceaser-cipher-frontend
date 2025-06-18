@@ -27,7 +27,7 @@ export function LandingPage() {
         <div className=" flex-col items-center mt-4 ">
           <button
             onClick={() => handleNavigation('/encrypt')}
-            className="bg-white text-amber-300 font-bold px-8 py-3 rounded-lg hover:bg-amber-300 hover:text-blue-600 transition shadow-md"
+            className="bg-white text-amber-300 font-bold px-8 py-3 rounded-lg hover:bg-black hover:text-blue-600 transition shadow-md"
           >
             Encrypt your message
           </button>  
@@ -38,7 +38,7 @@ export function LandingPage() {
         <div className=" flex-col items-center mt-4">
           <button
             onClick={() => handleNavigation('/decrypt')}
-            className="bg-white text-amber-300 font-bold px-8 py-3 rounded-lg hover:bg-amber-300 hover:text-blue-600 transition shadow-md"
+            className="bg-white text-amber-300 font-bold px-8 py-3 rounded-lg hover:bg-black  transition shadow-md"
           >
             Decrypt your encrypted message
           </button>

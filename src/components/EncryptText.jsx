@@ -85,7 +85,7 @@ const EncryptText = () => {
         <div className="mb-6 flex justify-end">
           <button
             onClick={clear}
-            className="text-sm text-red-500 hover:underline transition"
+            className="w-full text-sm text-red-500 hover:bg-blue-500"
           >
             ❌ Clear All
           </button>
@@ -95,7 +95,7 @@ const EncryptText = () => {
         <div className="mb-6">
           <button
             onClick={handleEncryptClick}
-            className="w-full bg-gradient-to-r from-amber-400 to-yellow-300 hover:from-amber-500 hover:to-yellow-400 text-black font-semibold py-3 rounded-xl shadow-md transition"
+            className="w-full text-sm text-red-500 hover:bg-blue-500"
           >
             🔐 Encrypt Text
           </button>

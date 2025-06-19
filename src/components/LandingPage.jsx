@@ -1,9 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { PiDetectiveFill } from "react-icons/pi";
 
 export function LandingPage() {
+  const navigate = useNavigate();
+
   const handleNavigation = (path) => {
-    window.location.href = path;
+    navigate(path);
   };
 
   return (
@@ -19,9 +22,7 @@ export function LandingPage() {
         </div>
         <div className='flex items-center text-amber-300'>
           Encrypt your messages easily using Caesar Cipher — fast, secure, and simple.
-          
         </div>
-
 
         {/* Buttons stacked with spacing */}
         <div className=" flex-col items-center mt-4 ">
@@ -31,8 +32,6 @@ export function LandingPage() {
           >
             Encrypt your message
           </button>  
-        
-          
         </div>
         
         <div className=" flex-col items-center mt-4">
@@ -42,13 +41,11 @@ export function LandingPage() {
           >
             Decrypt your encrypted message
           </button>
-          
-        </div>
-        <div className='flex items-center text-amber-300 mt-2.5'>
-          Built by Anshuman
-          
         </div>
 
+        <div className='flex items-center text-amber-300 mt-2.5'>
+          Built by Anshuman
+        </div>
       </div>
     </div>
   );

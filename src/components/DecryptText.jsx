@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import axios from '../axios';
-import { PiLockLaminatedOpenBold } from "react-icons/pi";
+
 import { FaRegCopy } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
+
 
 const DecryptText = () => {
   const [inputText, setInputText] = useState('');
   const [shift, setShift] = useState('');
   const [decryptedText, setDecryptedText] = useState('');
+  const navigate = useNavigate();
+
 
   const handleDecryptClick = async () => {
     if (!inputText.trim()) {
@@ -122,20 +126,22 @@ const DecryptText = () => {
         )}
 
         {/* Navigation Buttons */}
-        <div className="mt-4 flex justify-center gap-4">
-          <button
-            onClick={() => window.history.back()}
-            className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow transition"
-          >
-            ⬅️ Back
-          </button>
-          <button
-            onClick={() => window.location.href = "/"}
-            className="px-6 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow transition"
-          >
-            🏠 Home
-          </button>
-        </div>
+        {/* Navigation Buttons */}
+<div className="mt-4 flex justify-center gap-4">
+  <button
+    onClick={() => navigate(-1)} // React Router back
+    className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow transition"
+  >
+    ⬅️ Back
+  </button>
+  <button
+    onClick={() => navigate('/')} // React Router home
+    className="px-6 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow transition"
+  >
+    🏠 Home
+  </button>
+</div>
+
       </div>
     </div>
   );

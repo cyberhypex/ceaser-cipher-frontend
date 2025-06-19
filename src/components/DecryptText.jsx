@@ -42,7 +42,7 @@ const DecryptText = () => {
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(decryptedText);
-    alert("Decrypted text copied to clipboard!:"+{decryptedText});
+    alert("Decrypted text copied to clipboard!:");
   };
 
   return (
